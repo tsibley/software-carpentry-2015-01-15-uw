@@ -10,7 +10,7 @@ startdate: 2015-01-15
 enddate: 2015-01-16
 latlng: 
 registration: open
-instructor: ["Russell Alleen-Willems", "Becca Blakewood", "Tyler Fox", "Emilia Gan", "Esther Le Grezause", "Maria Mckinley", "Ben Marwick", "Marina Oganyan", "Peter Schmiedeskamp", "Rachael Tatman"]
+instructor: ["Russell Alleen-Willems", "Becca Blakewood", "Tyler Fox", "Emilia Gan", "Esther Le Grezause", "Jens von der Linden", "Maria Mckinley", "Ben Marwick", "Marina Oganyan", "Peter Schmiedeskamp", "Rachael Tatman"]
 helper: [""]
 contact: bmarwick@uw.edu
 #redirect: http://www.3rd.party.workshop.home.page.com
@@ -42,12 +42,25 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash']
 
 <p>
   <a href="//software-carpentry.org">Software Carpentry</a>'s mission
-  is to help scientists and engineers become more productive
-  by teaching them basic lab skills for computing
-  like program design, version control, data management, and task automation.
+  is to help researchers become more productive
+  by teaching them basic lab skills for computing.
   This two-day hands-on workshop will cover basic concepts and tools;
   participants will be encouraged to help one another
-  and to apply what they have learned to their own research problems.
+  and to apply what they have learned to their own research problems. 
+  The goal of the workshop is for participants to acquire skills to:
+</p>
+
+<ul>
+<li>enable automation of repetitive tasks</li>
+<li>work with structured data</li>
+<li>improve the reproducibility of your research</li>
+<li>version control code for reuse and collaboration.</li>
+</ul>
+ 
+<p>
+  This workshop is supported by the UW <a href="http://escience.washington.edu/">
+  eScience Institute</a>. Priority will thus be given to UW-affiliated students, 
+  staff and faculty.
 </p>
 
 <!--
@@ -58,7 +71,7 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash']
 <p>
   <strong>Who:</strong>
   The course is aimed at graduate students, staff, faculty and other 
-  researchers. No previous experience with programming is required. If
+  researchers at UW. No previous experience with programming is required. If
   you do have experience in the topics in the syllabus and want to help,
   send us an email.
 </p>
@@ -83,7 +96,7 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash']
 <p>
   <strong>Requirements:</strong>
   Participants must bring a laptop with a few specific software packages 
-  installed in advance (listed below). They are also required to abide by Software Carpentry's
+  installed in advance (<a href="#Setup">listed below</a>). They are also required to abide by Software Carpentry's
   <a href="http://software-carpentry.org/conduct.html">Code of Conduct</a>.
 </p>
 
@@ -92,7 +105,7 @@ We find that workshops go a lot better if people come in groups, e.g.,
 4-5 people from one lab, half a dozen from another department or 
 institute, etc., so that they are less inhibited about asking 
 questions, and can support each other afterwards. So while individual 
-sign-ups are welcome, we encourage you to sign-up with a friend!
+sign-ups are welcome, we encourage you to sign-up with a friend.
 </p>
 
 <p>
@@ -124,15 +137,16 @@ contents and exercises are aimed at novices.
 
 <p>
   We are running two full concurrent sessions, one in each room. There 
-  are two key differences between the sessions. First is that one 
-  will teach programming with and the other will teach programming 
-  with R, all the other class content will be the same. As a general 
-  guide, Python is for you if you're working in the natural or physical 
-  sciences, and if you're in the social sciences and humanities then 
-  R might be more valuable. The second difference is that the instructors 
-  in the Python session come from the natural and physical sciences, 
-  while the instructors in the R session come from the social sciences 
-  and humanities. These is just a convenient way to offer the lessons, 
+  are two key differences between the sessions. First is that one session
+  will teach programming with <b>Python</b> and the other session will teach programming 
+  with <b>R</b>, all the other class content will be the same. <br><br>
+  As a rough guide to choosing which language to learn, Python might be best for you if you're working in the   
+  natural or physical sciences, and if you're in the social sciences and humanities then 
+  R might be more valuable. <br><br>
+  The second difference between the two sessions is that the instructors 
+  in the Python session mostly come from the natural and physical sciences, 
+  while the instructors in the R session mostly come from the social sciences 
+  and humanities. These is simply a convenient way to organise the lessons, 
   and of course you're welcome to join whichever session you think will 
   benefit you the most. The choice is completely up to you.  
 </p>
@@ -141,10 +155,10 @@ contents and exercises are aimed at novices.
   <div class="span6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Automating tasks with the Unix shell</td> </tr>
+      <tr> <td>09:00</td> <td><a href="novice/ref/01-shell.html">Automating tasks with the Unix shell</a></td> </tr>
       <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
       <tr> <td>12:00</td> <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td> <td>Building programs with Python <em>or</em> R</td> </tr>
+      <tr> <td>13:00</td> <td>Building programs with <b><a href="novice/ref/03-python.html">Python</a></b> <em>or</em> <b><a href="novice/ref/06-R.html">R</a></b></td> </tr>
       <tr> <td><em>14:30</em></td> <td><em>Coffee break</em></td> </tr>
       <tr> <td>16:00</td> <td>Wrap-up</td> </tr>
     </table>
@@ -152,10 +166,10 @@ contents and exercises are aimed at novices.
   <div class="span6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Version control with Git</td> </tr>
+      <tr> <td>09:00</td> <td><a href="novice/ref/02-git.html">Version control with Git</a></td> </tr>
       <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
       <tr> <td>12:00</td> <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td> <td>Managing data with SQL</td> </tr>
+      <tr> <td>13:00</td> <td><a href="novice/ref/04-sql.html">Managing data with SQL</a></td> </tr>
       <tr> <td><em>14:30</em></td> <td><em>Coffee break</em></td> </tr>
       <tr> <td>16:00</td> <td>Wrap-up</td> </tr>
     </table>
@@ -168,21 +182,6 @@ contents and exercises are aimed at novices.
     Edit this block to show what topics will be covered.
 -->
 <h2>Syllabus</h2>
-
-<p>
-  We are running two full concurrent sessions, one in each room. There 
-  are two key differences between the sessions. First is that one 
-  will teach programming with and the other will teach programming 
-  with R, all the other class content will be the same. As a general 
-  guide, Python is for you if you're working in the natural or physical 
-  sciences, and if you're in the social sciences and humanities then 
-  R might be more valuable. The second difference is that the instructors 
-  in the Python session come from the natural and physical sciences, 
-  while the instructors in the R session come from the social sciences 
-  and humanities. These is just a convenient way to offer the lessons, 
-  and of course you're welcome to join whichever session you think will 
-  benefit you the most. The choice is completely up to you.  
-</p>
 
 <div class="row-fluid">
   <div class="span6">
@@ -261,14 +260,20 @@ contents and exercises are aimed at novices.
     (In particular, most workshops teach either Python or R, not both.)
 -->
 
-<h2>Setup</h2>
+<a name="Setup"></a><h2>Setup</h2>
 
 <p>
   To participate in a Software Carpentry workshop, 
   you will need working copies of the software described below.
   Please make sure to install everything
   (or at least to download the installers)
-  <em>before</em> the start of your workshop.
+  <em>before</em> the start of your workshop. Limited time will 
+  be available before the start of the workshop to assist with 
+  installation.
+</p>
+   If you haven't already, please register for a free account at GitHub.
+   If you have an edu email, you can <a href="https://education.github.com/discount_requests/new">register for a free educational account</a> which has some features usually only found in paid accounts. We will use this service as part of the lesson on version control.
+<p>
 </p>
 
 {% include setup.html %}
